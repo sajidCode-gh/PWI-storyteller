@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "proximanova";
+  src: url("../assets/fonts/proximanova-regular-webfont.woff");
+}
+
+:root {
+  --white-clr: #ffffff;
+  --black-clr: #031a26;
+  --accent-clr: #40b3f4;
+  --accent-clr-hover: hsl(202, 100%, 40%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ============default styles ============ */
+
+body {
+  font-family: "proximanova", sans-serif;
+  margin: 0;
+  line-height: 18.6px;
+  color: var(--white-clr);
+}
+
+p,
+h1,
+h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
+}
+
+ul {
+  padding: none;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+a,
+button {
+  transition: all 250ms ease-in-out;
+  font-size: 16px;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+button {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ============utility classes ============ */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.btn1,
+.btn1-1 {
+  background-color: var(--accent-clr);
+  color: var(--white-clr);
+  padding: 1rem;
+  border-radius: 5px;
+  position: relative;
+}
+
+.btn1-1 {
+  background-color: transparent;
+  color: var(--accent-clr);
+  outline: 1px solid var(--accent-clr);
+}
+
+.btn1:hover {
+  background-color: var(--accent-clr-hover);
+}
+.btn1-1:hover {
+  background-color: var(--accent-clr-hover);
+  color: var(--white-clr);
+  outline: 1px solid var(--accent-clr-hover);
+}
+
+.btn2 {
+  background-color: transparent;
+  border: 1px solid var(--white-clr);
+  display: inline-block;
+  text-align: center;
+  width: 250px;
+  border-radius: 30px;
+  padding: 18px 0;
+}
+
+.btn2:hover {
+  background-color: var(--white-clr);
+  color: var(--black-clr);
+}
+
+.st-logo {
+  max-width: 247px;
+  height: 247px;
+  border: 1px solid var(--white-clr);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.st-logo h2 {
+  font-size: 20px;
+  margin: 1rem 0 10px 0;
+}
+
+.st-logo img {
+  width: 35%;
+}
+
+.btn3,
+.btn3-1 {
+  background-color: hsl(201, 64%, 14%);
+  color: var(--white-clr);
+  display: inline-block;
+  text-align: center;
+  width: 250px;
+  border-radius: 30px;
+  padding: 18px 0;
+}
+
+.btn3-1 {
+  background-color: var(--accent-clr);
+}
+
+.btn3-1:hover {
+  background-color: var(--accent-clr-hover);
+}
+
+.btn3:hover {
+  background-color: hsl(201, 64%, 20%);
+}
