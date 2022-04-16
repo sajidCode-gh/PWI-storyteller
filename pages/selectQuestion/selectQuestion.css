@@ -1,0 +1,47 @@
+.select-topic {
+  min-height: 100vh;
+  background: url("../../assets/imgs-icons/Wave\ Background\ IMG.png") center
+    repeat;
+  background-size: cover;
+}
+
+.select-topic-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.select-topic h2 {
+  padding-top: 2rem;
+}
+
+.select-topic p {
+  margin: 10px 0 1rem 0;
+}
+
+.select-topic .topics {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.topics span {
+  padding: 1rem 10px;
+  border-top: 1px solid var(--white-clr);
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+
+.topics span:hover {
+  background-color: var(--white-clr);
+  color: var(--black-clr);
+}
+
+.last-topic {
+  border-bottom: 1px solid var(--white-clr);
+  display: inline-block;
+  margin-bottom: 2rem;
+}

@@ -185,7 +185,7 @@
   }
 
   .videos {
-    margin-top: 5rem;
+    margin-top: 6rem;
   }
 
   .filter-flex {
@@ -214,12 +214,18 @@
   }
 }
 
-@media screen and (max-height: 400px) {
+@media screen and (max-height: 450px) {
   .videos {
     margin-top: 20rem;
   }
 
   .st-hero {
     height: 95vh;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  .videos {
+    margin-top: 10rem;
   }
 }

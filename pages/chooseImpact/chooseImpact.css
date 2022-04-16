@@ -1,0 +1,25 @@
+.choose-impact {
+  height: 100vh;
+  background: url("../../assets/imgs-icons/Wave\ Background\ IMG.png") center
+    center no-repeat;
+  background-size: cover;
+  background-color: black;
+}
+
+.choose-impact-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.choose-impact p {
+  margin: 10px 0 3rem 0;
+}
+
+.choose-impact .btns {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

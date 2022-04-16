@@ -8,6 +8,7 @@
   --black-clr: #031a26;
   --accent-clr: #40b3f4;
   --accent-clr-hover: hsl(202, 100%, 40%);
+  --background-clr: #080808;
 }
 
 *,
@@ -23,6 +24,10 @@ body {
   margin: 0;
   line-height: 18.6px;
   color: var(--white-clr);
+}
+
+.body {
+  background-color: var(--background-clr);
 }
 
 p,
@@ -77,6 +82,17 @@ a {
   padding: 0 10px;
 }
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.nav img {
+  width: 25px;
+  cursor: pointer;
+}
+
 .btn1,
 .btn1-1 {
   background-color: var(--accent-clr);
@@ -109,6 +125,7 @@ a {
   width: 250px;
   border-radius: 30px;
   padding: 18px 0;
+  color: var(--white-clr);
 }
 
 .btn2:hover {
@@ -117,7 +134,7 @@ a {
 }
 
 .st-logo {
-  max-width: 247px;
+  width: 247px;
   height: 247px;
   border: 1px solid var(--white-clr);
   border-radius: 5px;
@@ -125,6 +142,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 2rem auto;
 }
 
 .st-logo h2 {
