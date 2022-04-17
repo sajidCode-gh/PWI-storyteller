@@ -93,6 +93,24 @@ a {
   cursor: pointer;
 }
 
+.icon > img {
+  width: 30px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--white-clr);
+  border-radius: 50%;
+}
+
+.icon:hover {
+  border: 2px solid var(--accent-clr);
+}
+
 .btn1,
 .btn1-1 {
   background-color: var(--accent-clr);
@@ -154,6 +172,14 @@ a {
   width: 35%;
 }
 
+.arrow-down {
+  position: absolute;
+  width: 15px;
+  right: 2rem;
+  bottom: 4rem;
+  cursor: pointer;
+}
+
 .btn3,
 .btn3-1 {
   background-color: hsl(201, 64%, 14%);
@@ -175,4 +201,11 @@ a {
 
 .btn3:hover {
   background-color: hsl(201, 64%, 20%);
+}
+
+@media screen and (max-width: 600px) {
+  .arrow-down {
+    right: 1rem;
+    bottom: 2rem;
+  }
 }

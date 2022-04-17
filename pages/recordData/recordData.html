@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storyteller | Select a Question</title>
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="stylesheet" href="./recordData.css" />
+    <script src="../app.js" defer></script>
+  </head>
+  <body class="body">
+    <section class="record">
+      <nav class="nav container">
+        <img
+          src="../../assets/imgs-icons/arrow-left.svg"
+          alt="back"
+          class="arrow-back"
+        />
+        <img
+          src="../../assets/imgs-icons/menu.svg"
+          alt="menu"
+          class="menu-bars"
+        />
+      </nav>
+
+      <div class="record-data container">
+        <h1>Tell Your Story</h1>
+        <p>Who was your favorite speak on your mission trip?</p>
+
+        <!-- next cards are added dynamically (app.js) -->
+        <div class="record-card">
+          <div class="record-head">
+            <h1 class="card-title">Record</h1>
+            <img
+              src="../../assets/imgs-icons/cross-shape.svg"
+              alt="close"
+              class="card-close"
+            />
+          </div>
+          <hr />
+          <p class="card-para">
+            Take a recording of yourself answering the question you have chosen.
+            Once you are done, click the button again to submit your video.
+          </p>
+          <hr />
+          <div class="card-footer">
+            <div class="dots">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+            <div class="card-next">Next</div>
+          </div>
+        </div>
+
+        <div class="record-flex">
+          <div class="upload-btn">
+            <div class="icon">
+              <label for="upload">
+                <img
+                  src="../../assets/imgs-icons/arrow-in-down-345.svg"
+                  alt="upload"
+                />
+              </label>
+              <input type="file" name="upload" id="upload" />
+            </div>
+            <span>Upload</span>
+          </div>
+          <div class="record-btn">
+            <img src="../../assets/imgs-icons/record-btn.svg" alt="record" />
+            <span>Record</span>
+          </div>
+          <div class="photo-btn">
+            <div class="icon">
+              <label for="photo">
+                <img src="../../assets/imgs-icons/camera-copy.svg" alt="" />
+              </label>
+              <input
+                type="file"
+                name="file"
+                id="photo"
+                accept="image/*"
+                capture
+              />
+            </div>
+            <span>Photo</span>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="../../assets/imgs-icons/arrow-down-sky.svg"
+        alt="down"
+        class="arrow-down"
+      />
+    </section>
+  </body>
+</html>

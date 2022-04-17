@@ -1,0 +1,183 @@
+.record {
+  min-height: 100vh;
+  background: url("../../assets/imgs-icons/Wave\ Background\ IMG.png") center
+    repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+.record-data {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 480px;
+}
+
+.record-data > p {
+  margin: 1rem 0 2rem 0;
+}
+
+.record-card {
+  color: var(--black-clr);
+  background-color: var(--white-clr);
+  border-radius: 30px;
+  padding: 1.5rem 0;
+  margin: 1rem auto;
+  text-align: left;
+}
+
+.record-head {
+  padding: 0rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.record-card .card-para {
+  padding: 0rem 2rem;
+  font-size: 20px;
+  margin: 0.5rem 0;
+  line-height: 31px;
+}
+
+.card-close {
+  width: 20px;
+  cursor: pointer;
+}
+
+.record-card hr {
+  width: 100%;
+  display: inline-block;
+  outline: none;
+  border: none;
+  height: 2px;
+  background-color: rgba(26, 26, 26, 0.2);
+}
+
+.card-footer {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  align-items: center;
+  padding: 0rem 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.card-next {
+  color: var(--accent-clr);
+  justify-self: end;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.dots {
+  display: flex;
+  gap: 10px;
+  justify-self: end;
+  align-content: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.308);
+  cursor: pointer;
+}
+
+.dot:nth-child(1) {
+  background-color: var(--black-clr);
+}
+
+.record-flex {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.record-flex > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  cursor: pointer;
+  position: relative;
+  z-index: 4;
+}
+
+.record-flex > div.active::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  top: -1.6rem;
+  left: 50%;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(26, 26, 26);
+  /* background-color: rgb(134, 12, 12); */
+  z-index: 1;
+}
+.record-flex > div.active::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 20px;
+  top: -1.22rem;
+  left: 50%;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(26, 26, 26);
+  /* background-color: rgb(134, 12, 12); */
+  z-index: 1;
+}
+
+.record-flex .record-btn.active::before {
+  top: -1.8rem;
+  width: 70px;
+  height: 25px;
+}
+
+.record-flex .record-btn.active::after {
+  top: -1.5rem;
+  width: 80px;
+}
+
+.record-flex input {
+  display: none;
+}
+
+.record-flex > div span {
+  margin-top: 2rem;
+}
+
+.record-flex .record-btn span {
+  margin-top: 0.8rem;
+  background-color: var(--white-clr);
+  border-radius: 30px;
+  color: var(--black-clr);
+  padding: 2px;
+}
+
+.upload-btn .icon,
+.photo-btn .icon {
+  margin-top: 1rem;
+}
+
+.upload-btn > img,
+.photo-btn > img {
+  width: 30px;
+}
+
+.record-btn > img {
+  width: 90px;
+}
+
+@media screen and (max-width: 600px) {
+  .record-card .card-para {
+    font-size: 16px;
+  }
+}
