@@ -1,0 +1,89 @@
+.likeIt {
+  min-height: 100vh;
+  background: url("../../assets/imgs-icons/Wave\ Background\ IMG.png") center
+    repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+.record-data {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.record-data > p {
+  margin: 1rem 0 2rem 0;
+}
+
+.record-likeIt {
+  width: 100%;
+  height: 450px;
+  max-width: 740px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.likeIt-btns {
+  display: flex;
+  gap: 2rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.likeIt-btns button {
+  outline: none;
+  border: none;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgb(174, 0, 0);
+  color: white;
+  align-self: center;
+  letter-spacing: 0;
+}
+
+.likeIt-btns button:hover {
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.521);
+}
+
+.likeIt-btns button:nth-child(2) {
+  background-color: green;
+  width: 125px;
+  height: 125px;
+}
+
+.likeIt-center {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  z-index: 10;
+  background-color: rgba(16, 15, 15, 0.764);
+  backdrop-filter: blur(5px);
+}
+
+.likeIt-center span {
+  font-size: 20px;
+}
+
+.story-btn {
+  max-width: 740px;
+  width: 100%;
+  margin: 1rem auto;
+  text-align: right;
+}

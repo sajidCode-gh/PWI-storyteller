@@ -79,8 +79,13 @@ cardNext.addEventListener("click", () => {
   recordBtns.forEach((btn) => {
     btn.classList.remove("active");
   });
+
   if (!counter == 1) {
     recordBtns[counter].classList.add("active");
+  }
+
+  if (counter == 1) {
+    recordBtns[counter + 1].classList.add("active");
   }
 
   counter++;

@@ -1,0 +1,132 @@
+.upload {
+  min-height: 100vh;
+  background: url("../../assets/imgs-icons/Wave\ Background\ IMG.png") center
+    repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+.record-data {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.record-data > p {
+  margin: 1rem 0 2rem 0;
+}
+
+.record-upload {
+  width: 100%;
+  height: 450px;
+  max-width: 740px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.upload-center {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  z-index: 10;
+  background-color: rgba(16, 15, 15, 0.764);
+  backdrop-filter: blur(5px);
+}
+
+.upload-complete {
+  width: 100%;
+  height: 100%;
+  max-width: 560px;
+  max-height: 560px;
+  border-radius: 50%;
+  background-color: #40b2f4b0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.upload-complete h1 {
+  font-size: 38px;
+  margin: 0 0 1rem 0;
+}
+
+.upload-complete .tick {
+  width: 36px;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.socials .icon {
+  width: 50px;
+  height: 50px;
+}
+
+.socials .icon img {
+  width: 16px;
+}
+
+.copy-url {
+  text-align: left;
+}
+
+.input-flex {
+  display: flex;
+  background-color: var(--white-clr);
+  padding: 5px 10px;
+  width: 290px;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+
+.input-flex img {
+  width: 20px;
+  margin: 0 5px;
+}
+
+.input-flex input {
+  padding: 10px 5px;
+  width: 100%;
+  border: none;
+}
+
+.upload-btn {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .upload-complete {
+    max-width: 350px;
+    max-height: 350px;
+    gap: 1rem;
+  }
+
+  .upload-complete h1 {
+    font-size: 24px;
+    margin: 5px;
+  }
+
+  .input-flex {
+    width: 200px;
+    margin: 5px;
+  }
+}
