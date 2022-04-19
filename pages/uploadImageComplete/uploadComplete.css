@@ -8,11 +8,12 @@
 }
 
 .record-data {
-  height: 90vh;
   display: flex;
+  height: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 4rem;
 }
 
 .record-data > p {
@@ -20,20 +21,75 @@
 }
 
 .record-upload {
-  width: 100%;
-  height: 450px;
-  max-width: 740px;
   border-radius: 10px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 1rem;
 }
 
+.record-image {
+  width: 100%;
+  max-width: 470px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.upload-image {
+  background-color: #d8d8d8;
+  width: 100%;
+  height: 470px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-image .icon {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+::placeholder {
+  font-family: "proximanova";
+  font-size: 20px;
+}
+
+.record-image input {
+  display: none;
+  width: 100%;
+}
+
+.record-image > label {
+  cursor: pointer;
+  width: 100%;
+  color: var(--black-clr);
+}
+
+.write-story {
+  width: 100%;
+  min-height: 300px;
+  padding: 1rem;
+  border: none;
+  resize: none;
+  font-size: 20px;
+}
+
+.share-btn {
+  max-width: 470px;
+  width: 100%;
+  margin: 1rem auto;
+}
+
 .upload-center {
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -45,7 +101,7 @@
   gap: 1rem;
   z-index: 10;
   background-color: rgba(16, 15, 15, 0.764);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
 }
 
 .upload-complete {

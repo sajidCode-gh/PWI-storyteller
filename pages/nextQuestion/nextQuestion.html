@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Storyteller | Select a Question</title>
+    <title>Storyteller | next question</title>
     <link rel="stylesheet" href="../base.css" />
-    <link rel="stylesheet" href="./selectQuestion.css" />
+    <link rel="stylesheet" href="./nextQuestion.css" />
   </head>
   <body class="body">
     <section class="select-question">
       <nav class="nav container">
         <img
-        src="../../assets/imgs-icons/arrow-left.svg"
+          src="../../assets/imgs-icons/arrow-left.svg"
           alt="back"
           class="arrow-back"
         />
@@ -31,11 +31,16 @@
 
         <div class="questions">
           <div class="question">
-            <span>QUESTION 1</span>
+            <span>QUESTION 1 - <span class="completed">COMPLETED <img src="../../assets/imgs-icons/tick-completed.svg" alt="tick"></span></span>
             <p>
               What was your favorite part of the PWI Mission trip in Africa?
             </p>
-            <a href="../recordData/recordData.html" class="btn2">TELL MY STORY</a>
+            <div class="another-story">
+              <div class="icon">
+                <img src="../../assets/imgs-icons/share.svg" alt="dots">
+              </div>
+              <a href="../recordData/recordData.html" class="btn2">TELL ANOTHER STORY</a>
+            </div>
           </div
           class="question">
           <div class="question">
@@ -44,10 +49,18 @@
             <a href="../recordData/recordData.html" class="btn2">TELL MY STORY</a>
           </div>
           <div class="question">
-            <span>QUESTION 3</span>
-            <p>Who was your favorite speak on your mission trip?</p>
+            <span>QUESTION 3  - <span class="completed">COMPLETED <img src="../../assets/imgs-icons/tick-completed.svg" alt="tick"></span></span>
+            <p>Why do you give to Southern Neighborhoods Network, Inc. dba IDEAS, the institute for Development, Evaluation, Assistance, and Solution? Please start with "I give to Southern Neighborhoods Network, Inc. dba IDEAS, the Institute for Development, Evaluation, Assistance, and Solutions by ..."</p>
+            <div class="another-story">
+              <div class="icon">
+                <img src="../../assets/imgs-icons/share.svg" alt="dots">
+              </div>
+              <a href="../recordData/recordData.html" class="btn2">TELL ANOTHER STORY</a>
+            </div>
           </div>
+          
         </div>
+        <button class="btn3-1">I'M FINISHED</button>
       </div>
 
       <img src="../../assets/imgs-icons/arrow-down-sky.svg" alt="down" class="arrow-down">

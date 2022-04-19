@@ -49,3 +49,25 @@
   padding: 1.5rem 10px;
   border-top: 1px solid var(--white-clr);
 }
+
+.questions .question:last-child {
+  border-bottom: 1px solid var(--white-clr);
+}
+
+.select-question-flex .btn3-1 {
+  margin: 2rem auto;
+}
+
+.another-story {
+  display: flex;
+  gap: 1rem;
+}
+
+.completed {
+  color: var(--accent-clr);
+}
+
+.completed img {
+  width: 17px;
+  margin: 0 10px;
+}

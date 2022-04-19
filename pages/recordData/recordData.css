@@ -98,17 +98,18 @@
   align-items: center;
 }
 
-.record-flex > div {
+.record-flex > a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
   cursor: pointer;
   position: relative;
+  color: var(--white-clr);
   z-index: 4;
 }
 
-.record-flex > div.active::before {
+.record-flex > a.active::before {
   content: "";
   position: absolute;
   width: 50px;
@@ -118,10 +119,10 @@
   border-radius: 50%;
   transform: translateX(-50%);
   background-color: rgb(26, 26, 26);
-  /* background-color: rgb(134, 12, 12); */
+
   z-index: 1;
 }
-.record-flex > div.active::after {
+.record-flex > a.active::after {
   content: "";
   position: absolute;
   width: 80px;
@@ -131,7 +132,6 @@
   border-radius: 50%;
   transform: translateX(-50%);
   background-color: rgb(26, 26, 26);
-  /* background-color: rgb(134, 12, 12); */
   z-index: 1;
 }
 
@@ -150,7 +150,8 @@
   display: none;
 }
 
-.record-flex > div span {
+.record-flex > a span {
+  display: inline-block;
   margin-top: 2rem;
 }
 

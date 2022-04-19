@@ -44,7 +44,7 @@ const cardPara = document.querySelector(".card-para");
 const cardNext = document.querySelector(".card-next");
 const card = document.querySelector(".record-card");
 const closeCard = document.querySelector(".card-close");
-const recordBtns = document.querySelectorAll(".record-flex > div");
+const recordBtns = document.querySelectorAll(".record-flex > a");
 
 const cards = [
   {
@@ -94,3 +94,5 @@ cardNext.addEventListener("click", () => {
 closeCard.addEventListener("click", () => {
   card.style.display = "none";
 });
+
+// ==========================

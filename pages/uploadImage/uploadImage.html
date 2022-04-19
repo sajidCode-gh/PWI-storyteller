@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storyteller | Upload image</title>
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="stylesheet" href="./uploadImage.css" />
+    <script src="./UploadImage.js" defer></script>
+  </head>
+  <body class="body">
+    <section class="image">
+      <nav class="nav container">
+        <img
+          src="../../assets/imgs-icons/arrow-left.svg"
+          alt="back"
+          class="arrow-back"
+        />
+        <img
+          src="../../assets/imgs-icons/menu.svg"
+          alt="menu"
+          class="menu-bars"
+        />
+      </nav>
+
+      <div class="record-data container">
+        <h1>Tell Your Story</h1>
+        <p>Who was your favorite speak on your mission trip?</p>
+
+        <div class="record-image">
+          <img src="" class="output-image" />
+          <label for="upload-image">
+            <div class="upload-image">
+              <div class="icon">
+                <img
+                  src="../../assets/imgs-icons/arrow-in-down-345.svg"
+                  alt="upload"
+                />
+              </div>
+              <h2>Upload Image</h2>
+            </div>
+            <input type="file" id="upload-image" accept="image/*" />
+          </label>
+          <textarea
+            placeholder="Tell us your story"
+            class="write-story"
+          ></textarea>
+        </div>
+        <div class="share-btn">
+          <button class="btn3">SHARE</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
