@@ -198,3 +198,26 @@
     margin: 5px;
   }
 }
+
+@media screen and (max-height: 560px) {
+  .upload-complete {
+    max-width: 320px;
+    max-height: 320px;
+    gap: 1rem;
+    z-index: 2rem;
+  }
+
+  .upload-complete h1 {
+    font-size: 24px;
+    margin: 5px;
+  }
+
+  .input-flex {
+    width: 200px;
+    margin: 5px;
+  }
+
+  .record-another {
+    font-size: 10px;
+  }
+}
