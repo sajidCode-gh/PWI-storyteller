@@ -8,7 +8,7 @@
 }
 
 .record-data {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,7 +59,7 @@
 
 .card-footer {
   display: grid;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 58% 42%;
   align-items: center;
   padding: 0rem 1.5rem;
   padding-bottom: 0.5rem;
@@ -102,10 +102,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
   cursor: pointer;
   position: relative;
   color: var(--white-clr);
+  font-size: 20px;
   z-index: 4;
 }
 
@@ -160,7 +161,7 @@
   background-color: var(--white-clr);
   border-radius: 30px;
   color: var(--black-clr);
-  padding: 2px;
+  padding: 10px 1rem;
 }
 
 .upload-btn .icon,
@@ -180,5 +181,18 @@
 @media screen and (max-width: 600px) {
   .record-card .card-para {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .record-data {
+    height: auto;
+  }
+
+  .record-flex {
+    margin-bottom: 2rem;
+  }
+  .record-data > h1 {
+    margin-top: 2rem;
   }
 }

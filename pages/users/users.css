@@ -84,8 +84,15 @@
   display: flex;
   gap: 1.5rem;
   border: 1px solid var(--black-clr);
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.1rem;
+  border-radius: 3px;
   cursor: pointer;
+}
+
+.filter span {
+  font-size: 16px;
+  font-family: inherit;
+  letter-spacing: 2px;
 }
 
 .filter:hover {
@@ -216,7 +223,7 @@
 
 @media screen and (max-height: 450px) {
   .videos {
-    margin-top: 20rem;
+    padding-top: 8rem;
   }
 
   .st-hero {
