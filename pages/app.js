@@ -1,4 +1,4 @@
-// ============video playing logic===============
+// ============video playing logic (users-page)===============
 //this login is not the best but works
 
 const video = document.querySelectorAll(".video video");
